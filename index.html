@@ -123,6 +123,17 @@ footer{position:relative;z-index:2;text-align:center;padding:2rem 1rem 3rem;colo
 footer strong{color:var(--gold);}
 
 .admin-trigger{position:fixed;bottom:14px;left:14px;z-index:300;font-size:.7rem;color:rgba(255,255,255,.1);cursor:default;user-select:none;}
+/* ── Autofill override: único fix confiável cross-browser ── */
+input:-webkit-autofill,input:-webkit-autofill:hover,input:-webkit-autofill:focus,
+input:-webkit-autofill:active,textarea:-webkit-autofill,textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,select:-webkit-autofill,select:-webkit-autofill:hover,
+select:-webkit-autofill:focus{
+  -webkit-box-shadow:0 0 0 1000px rgba(11,24,48,.75) inset !important;
+  box-shadow:0 0 0 1000px rgba(11,24,48,.75) inset !important;
+  -webkit-text-fill-color:#fff8e7 !important;
+  caret-color:#fff8e7;
+  transition:background-color 5000s ease-in-out 0s !important;
+}
 .loading{text-align:center;padding:1.5rem;color:rgba(255,248,231,.35);font-size:.88rem;}
 @media(max-width:480px){.ms-form{flex-direction:column;}.recados-wall{grid-template-columns:1fr;}}
 </style>
