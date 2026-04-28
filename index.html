@@ -8,7 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-:root{--sky:#0b1830;--gold:#f7c84a;--gold2:#c8880e;--cream:#fff8e7;--brown2:#3d1e07;color-scheme:dark;}
+:root{--sky:#0b1830;--gold:#f7c84a;--gold2:#c8880e;--cream:#fff8e7;--brown2:#3d1e07;}
 html{scroll-behavior:smooth;}
 body{font-family:"DM Sans",sans-serif;font-weight:300;background:var(--sky);color:var(--cream);overflow-x:hidden;}
 #stars{position:fixed;inset:0;z-index:0;pointer-events:none;}
@@ -48,14 +48,14 @@ body{font-family:"DM Sans",sans-serif;font-weight:300;background:var(--sky);colo
 .sec-desc{color:rgba(255,248,231,.5);font-size:.95rem;margin-top:.35rem;}
 .bg-wood{background:linear-gradient(135deg,rgba(92,45,10,.32),rgba(61,30,7,.4));}
 .rsvp-card{background:rgba(255,255,255,.05);border:1.5px solid rgba(247,200,74,.2);border-radius:20px;padding:2rem;max-width:500px;margin:0 auto;}
-.rsvp-field{width:100%;background:rgba(11,24,48,.75);border:1.5px solid rgba(247,200,74,.25);border-radius:10px;color:var(--cream);font-family:"DM Sans",sans-serif;font-size:.95rem;padding:.65rem 1rem;outline:none;transition:.2s;margin-bottom:.7rem;-webkit-appearance:none;appearance:none;}
+.rsvp-field{width:100%;background:rgba(11,24,48,.75)!important;border:1.5px solid rgba(247,200,74,.25);border-radius:10px;color:#fff8e7!important;font-family:"DM Sans",sans-serif;font-size:.95rem;padding:.65rem 1rem;outline:none;transition:.2s;margin-bottom:.7rem;-webkit-appearance:none;appearance:none;}
 .rsvp-field:focus{border-color:var(--gold);}
 .rsvp-field::placeholder{color:rgba(255,248,231,.45);}
 select.rsvp-field option{background:#1a2f5a;color:var(--cream);}
 #companionsSection{display:none;border-top:1px solid rgba(247,200,74,.15);padding-top:.8rem;margin-bottom:.7rem;}
 #companionsSection.show{display:block;}
 .comp-label{font-size:.78rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:.5rem;display:block;}
-.comp-input{width:100%;background:rgba(11,24,48,.75);border:1.5px solid rgba(247,200,74,.25);border-radius:8px;color:var(--cream);font-family:"DM Sans",sans-serif;font-size:.88rem;padding:.5rem .85rem;outline:none;transition:.2s;margin-bottom:.4rem;-webkit-appearance:none;}
+.comp-input{width:100%;background:rgba(11,24,48,.75)!important;border:1.5px solid rgba(247,200,74,.25);border-radius:8px;color:#fff8e7!important;font-family:"DM Sans",sans-serif;font-size:.88rem;padding:.5rem .85rem;outline:none;transition:.2s;margin-bottom:.4rem;-webkit-appearance:none;}
 .comp-input:focus{border-color:var(--gold);}
 .comp-input::placeholder{color:rgba(255,248,231,.5);}
 .btn-rsvp{display:block;width:100%;font-family:"DM Sans",sans-serif;font-size:1.25rem;font-weight:500;color:#1a0800;background:var(--gold);border:none;border-radius:40px;padding:.7rem 1.8rem;cursor:pointer;box-shadow:0 4px 20px rgba(247,200,74,.35);transition:.2s;}
@@ -67,7 +67,7 @@ select.rsvp-field option{background:#1a2f5a;color:var(--cream);}
 .upload-icon{font-size:2.4rem;margin-bottom:.4rem;}
 .upload-hint{font-family:"DM Sans",sans-serif;font-size:1.2rem;color:rgba(255,248,231,.7);}
 .photo-form{display:flex;flex-direction:column;gap:.6rem;margin-bottom:1.4rem;}
-.photo-form input{background:rgba(11,24,48,.75);border:1.5px solid rgba(247,200,74,.25);border-radius:10px;color:var(--cream);font-family:"DM Sans",sans-serif;font-size:.95rem;padding:.6rem 1rem;outline:none;transition:.2s;margin-bottom:.65rem;-webkit-appearance:none;}
+.photo-form input{background:rgba(11,24,48,.75)!important;border:1.5px solid rgba(247,200,74,.25);border-radius:10px;color:#fff8e7!important;font-family:"DM Sans",sans-serif;font-size:.95rem;padding:.6rem 1rem;outline:none;transition:.2s;margin-bottom:.65rem;-webkit-appearance:none;}
 .photo-form input:focus{border-color:var(--gold);}
 .photo-form input::placeholder{color:rgba(255,248,231,.5);}
 .photo-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:.75rem;}
@@ -78,7 +78,7 @@ select.rsvp-field option{background:#1a2f5a;color:var(--cream);}
 .photo-card:hover .photo-delete{opacity:1;}
 .photo-empty{color:rgba(255,248,231,.28);text-align:center;padding:2rem;font-size:.9rem;}
 .recado-form{background:rgba(255,255,255,.05);border:1.5px solid rgba(247,200,74,.16);border-radius:16px;padding:1.4rem;margin-bottom:1.5rem;}
-.recado-form textarea,.recado-form input{width:100%;background:rgba(11,24,48,.75);border:1.5px solid rgba(247,200,74,.25);border-radius:10px;color:var(--cream);font-family:"DM Sans",sans-serif;font-size:.95rem;padding:.65rem 1rem;outline:none;transition:.2s;margin-bottom:.65rem;resize:vertical;-webkit-appearance:none;}
+.recado-form textarea,.recado-form input{width:100%;background:rgba(11,24,48,.75)!important;border:1.5px solid rgba(247,200,74,.25);border-radius:10px;color:#fff8e7!important;font-family:"DM Sans",sans-serif;font-size:.95rem;padding:.65rem 1rem;outline:none;transition:.2s;margin-bottom:.65rem;resize:vertical;-webkit-appearance:none;}
 .recado-form textarea::placeholder,.recado-form input::placeholder{color:rgba(255,248,231,.5);}
 .recado-form textarea:focus,.recado-form input:focus{border-color:var(--gold);}
 .recado-form textarea{min-height:90px;}
@@ -93,7 +93,7 @@ select.rsvp-field option{background:#1a2f5a;color:var(--cream);}
 .music-suggest{background:rgba(255,255,255,.05);border:1.5px solid rgba(247,200,74,.16);border-radius:16px;padding:1.4rem;}
 .ms-title{font-family:"DM Sans",sans-serif;font-size:1.4rem;color:var(--gold);margin-bottom:.9rem;}
 .ms-form{display:flex;gap:.65rem;flex-wrap:wrap;}
-.ms-form input{flex:1;min-width:140px;background:rgba(11,24,48,.75);border:1.5px solid rgba(247,200,74,.25);border-radius:10px;color:var(--cream);font-family:"DM Sans",sans-serif;font-size:.9rem;padding:.55rem .9rem;outline:none;transition:.2s;-webkit-appearance:none;}
+.ms-form input{flex:1;min-width:140px;background:rgba(11,24,48,.75)!important;border:1.5px solid rgba(247,200,74,.25);border-radius:10px;color:#fff8e7!important;font-family:"DM Sans",sans-serif;font-size:.9rem;padding:.55rem .9rem;outline:none;transition:.2s;-webkit-appearance:none;}
 .ms-form input:focus{border-color:var(--gold);}
 .ms-form input::placeholder{color:rgba(255,248,231,.5);}
 .songs-list{margin-top:1rem;display:flex;flex-direction:column;gap:.45rem;}
@@ -126,6 +126,16 @@ footer strong{color:var(--gold);}
 
 .loading{text-align:center;padding:1.5rem;color:rgba(255,248,231,.35);font-size:.88rem;}
 @media(max-width:480px){.ms-form{flex-direction:column;}.recados-wall{grid-template-columns:1fr;}}
+
+/* Autofill fix */
+input:-webkit-autofill,input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,input:-webkit-autofill:active,
+textarea:-webkit-autofill,textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus{
+  -webkit-box-shadow:0 0 0 1000px rgba(11,24,48,.75) inset!important;
+  -webkit-text-fill-color:#fff8e7!important;
+  transition:background-color 9999s ease 0s;
+}
 </style>
 </head>
 <body>
@@ -263,7 +273,7 @@ footer strong{color:var(--gold);}
     <p class="sec-desc">Vamos saber quem vai curtir o arraiá!</p>
   </div>
   <div class="rsvp-card">
-    <input class="rsvp-field" type="text" id="rsvpNome" placeholder="Seu nome completo" maxlength="80" autocomplete="off" readonly onfocus="this.removeAttribute('readonly')" ontouchstart="this.removeAttribute('readonly')">
+    <input class="rsvp-field" type="text" id="rsvpNome" placeholder="Seu nome completo" maxlength="80" autocomplete="off">
     <select class="rsvp-field" id="rsvpPresenca">
       <option value="">— Vou comparecer? —</option>
       <option value="sim">✅ Sim, estarei lá!</option>
@@ -303,8 +313,8 @@ footer strong{color:var(--gold);}
     <div style="font-size:.8rem;color:rgba(255,248,231,.32);margin-top:.3rem;">JPG ou PNG · máx 5 MB</div>
   </div>
   <div class="photo-form">
-    <input type="text" id="photoAuthor" placeholder="Seu nome" maxlength="50" autocomplete="off" readonly onfocus="this.removeAttribute('readonly')" ontouchstart="this.removeAttribute('readonly')">
-    <input type="text" id="photoCaption" placeholder="Uma legenda carinhosa..." maxlength="100" autocomplete="off" readonly onfocus="this.removeAttribute('readonly')" ontouchstart="this.removeAttribute('readonly')">
+    <input type="text" id="photoAuthor" placeholder="Seu nome" maxlength="50" autocomplete="off">
+    <input type="text" id="photoCaption" placeholder="Uma legenda carinhosa..." maxlength="100" autocomplete="off">
     <button class="btn" id="photoSubmitBtn" onclick="submitPhoto()">Enviar foto 📸</button>
   </div>
   <div class="photo-grid" id="photoGrid">
@@ -322,8 +332,8 @@ footer strong{color:var(--gold);}
     <p class="sec-desc">Deixe uma mensagem carinhosa para a aniversariante!</p>
   </div>
   <div class="recado-form">
-    <input type="text" id="recadoNome" placeholder="Seu nome" maxlength="60" autocomplete="off" readonly onfocus="this.removeAttribute('readonly')" ontouchstart="this.removeAttribute('readonly')">
-    <textarea id="recadoTexto" placeholder="Escreva seu recado aqui... 💛" maxlength="300" autocomplete="off" readonly onfocus="this.removeAttribute('readonly')" ontouchstart="this.removeAttribute('readonly')"></textarea>
+    <input type="text" id="recadoNome" placeholder="Seu nome" maxlength="60" autocomplete="off">
+    <textarea id="recadoTexto" placeholder="Escreva seu recado aqui... 💛" maxlength="300" autocomplete="off"></textarea>
     <button class="btn" onclick="submitRecado()" style="width:100%;margin-top:.25rem;">Enviar recado 💌</button>
     <p class="pending-notice">⏳ Seu recado será revisado pelo administrador antes de aparecer aqui.</p>
   </div>
@@ -347,8 +357,8 @@ footer strong{color:var(--gold);}
   <div class="music-suggest">
     <p class="ms-title">🎸 Qual música não pode faltar na festa da Berna?</p>
     <div class="ms-form">
-      <input type="text" id="songName" placeholder="Nome da música" maxlength="80" autocomplete="off" readonly onfocus="this.removeAttribute('readonly')" ontouchstart="this.removeAttribute('readonly')">
-      <input type="text" id="songArtist" placeholder="Artista / Banda" maxlength="60" autocomplete="off" readonly onfocus="this.removeAttribute('readonly')" ontouchstart="this.removeAttribute('readonly')">
+      <input type="text" id="songName" placeholder="Nome da música" maxlength="80" autocomplete="off">
+      <input type="text" id="songArtist" placeholder="Artista / Banda" maxlength="60" autocomplete="off">
       <button class="btn" style="white-space:nowrap;" onclick="submitSong()">Enviar 🎉</button>
     </div>
     <div class="songs-list" id="songsList"><p class="photo-empty">Carregando sugestões...</p></div>
@@ -401,6 +411,21 @@ function showToast(msg){var t=document.getElementById("toast");t.textContent=msg
 var cfC=["#f7c84a","#e63946","#2ecc71","#3498db","#e91e8c","#e67e22","#9b59b6"];
 function burst(){for(var i=0;i<38;i++){var c=document.createElement("div");c.className="cf";c.style.cssText="left:"+(15+Math.random()*70)+"vw;background:"+cfC[Math.floor(Math.random()*cfC.length)]+";width:"+(6+Math.random()*8)+"px;height:"+(6+Math.random()*8)+"px;border-radius:"+(Math.random()>.5?"50%":"2px")+";--d:"+(1.6+Math.random()*2).toFixed(1)+"s;--dl:"+(Math.random()*.5).toFixed(2)+"s;";document.body.appendChild(c);setTimeout(function(){c.remove();},3800);}}
 
+
+/* Force input backgrounds after any autofill might trigger */
+function enforceInputStyles(){
+  document.querySelectorAll('input[type="text"],input[type="number"],textarea').forEach(function(el){
+    el.style.setProperty('background','rgba(11,24,48,.75)','important');
+    el.style.setProperty('color','#fff8e7','important');
+  });
+}
+window.addEventListener('DOMContentLoaded',function(){
+  enforceInputStyles();
+  setTimeout(enforceInputStyles,200);
+  setTimeout(enforceInputStyles,600);
+  setTimeout(enforceInputStyles,1500);
+});
+
 /* STARS */
 var stEl=document.getElementById("stars");
 for(var i=0;i<150;i++){var s=document.createElement("div");s.className="star";var sz=Math.random()*2.5+.6;s.style.cssText="left:"+Math.random()*100+"%;top:"+Math.random()*100+"%;width:"+sz+"px;height:"+sz+"px;--d:"+(Math.random()*3+2).toFixed(1)+"s;--dl:-"+(Math.random()*5).toFixed(1)+"s;";stEl.appendChild(s);}
@@ -422,7 +447,7 @@ function updateCompanions(){
   if(n===0){sec.classList.remove("show");inp.innerHTML="";return;}
   sec.classList.add("show");
   var html="";
-  for(var i=0;i<Math.min(n,6);i++){html+='<input class="comp-input" type="text" id="comp'+i+'" placeholder="Nome do acompanhante '+(i+1)+'" maxlength="60" autocomplete="off" readonly onfocus="this.removeAttribute(\"readonly\")" ontouchstart="this.removeAttribute(\"readonly\")">';}
+  for(var i=0;i<Math.min(n,6);i++){html+='<input class="comp-input" type="text" id="comp'+i+'" placeholder="Nome do acompanhante '+(i+1)+'" maxlength="60" autocomplete="off">';}
   inp.innerHTML=html;
 }
 
