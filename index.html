@@ -123,17 +123,7 @@ footer{position:relative;z-index:2;text-align:center;padding:2rem 1rem 3rem;colo
 footer strong{color:var(--gold);}
 
 .admin-trigger{position:fixed;bottom:14px;left:14px;z-index:300;font-size:.7rem;color:rgba(255,255,255,.1);cursor:default;user-select:none;}
-/* ── Autofill override: único fix confiável cross-browser ── */
-input:-webkit-autofill,input:-webkit-autofill:hover,input:-webkit-autofill:focus,
-input:-webkit-autofill:active,textarea:-webkit-autofill,textarea:-webkit-autofill:hover,
-textarea:-webkit-autofill:focus,select:-webkit-autofill,select:-webkit-autofill:hover,
-select:-webkit-autofill:focus{
-  -webkit-box-shadow:0 0 0 1000px rgba(11,24,48,.75) inset !important;
-  box-shadow:0 0 0 1000px rgba(11,24,48,.75) inset !important;
-  -webkit-text-fill-color:#fff8e7 !important;
-  caret-color:#fff8e7;
-  transition:background-color 5000s ease-in-out 0s !important;
-}
+
 .loading{text-align:center;padding:1.5rem;color:rgba(255,248,231,.35);font-size:.88rem;}
 @media(max-width:480px){.ms-form{flex-direction:column;}.recados-wall{grid-template-columns:1fr;}}
 </style>
@@ -273,7 +263,7 @@ select:-webkit-autofill:focus{
     <p class="sec-desc">Vamos saber quem vai curtir o arraiá!</p>
   </div>
   <div class="rsvp-card">
-    <input class="rsvp-field" type="text" id="rsvpNome" placeholder="Seu nome completo" maxlength="80">
+    <input class="rsvp-field" type="text" id="rsvpNome" placeholder="Seu nome completo" maxlength="80" autocomplete="off" readonly onfocus="this.removeAttribute('readonly')" ontouchstart="this.removeAttribute('readonly')">
     <select class="rsvp-field" id="rsvpPresenca">
       <option value="">— Vou comparecer? —</option>
       <option value="sim">✅ Sim, estarei lá!</option>
@@ -313,8 +303,8 @@ select:-webkit-autofill:focus{
     <div style="font-size:.8rem;color:rgba(255,248,231,.32);margin-top:.3rem;">JPG ou PNG · máx 5 MB</div>
   </div>
   <div class="photo-form">
-    <input type="text" id="photoAuthor" placeholder="Seu nome" maxlength="50">
-    <input type="text" id="photoCaption" placeholder="Uma legenda carinhosa..." maxlength="100">
+    <input type="text" id="photoAuthor" placeholder="Seu nome" maxlength="50" autocomplete="off" readonly onfocus="this.removeAttribute('readonly')" ontouchstart="this.removeAttribute('readonly')">
+    <input type="text" id="photoCaption" placeholder="Uma legenda carinhosa..." maxlength="100" autocomplete="off" readonly onfocus="this.removeAttribute('readonly')" ontouchstart="this.removeAttribute('readonly')">
     <button class="btn" id="photoSubmitBtn" onclick="submitPhoto()">Enviar foto 📸</button>
   </div>
   <div class="photo-grid" id="photoGrid">
@@ -332,8 +322,8 @@ select:-webkit-autofill:focus{
     <p class="sec-desc">Deixe uma mensagem carinhosa para a aniversariante!</p>
   </div>
   <div class="recado-form">
-    <input type="text" id="recadoNome" placeholder="Seu nome" maxlength="60">
-    <textarea id="recadoTexto" placeholder="Escreva seu recado aqui... 💛" maxlength="300"></textarea>
+    <input type="text" id="recadoNome" placeholder="Seu nome" maxlength="60" autocomplete="off" readonly onfocus="this.removeAttribute('readonly')" ontouchstart="this.removeAttribute('readonly')">
+    <textarea id="recadoTexto" placeholder="Escreva seu recado aqui... 💛" maxlength="300" autocomplete="off" readonly onfocus="this.removeAttribute('readonly')" ontouchstart="this.removeAttribute('readonly')"></textarea>
     <button class="btn" onclick="submitRecado()" style="width:100%;margin-top:.25rem;">Enviar recado 💌</button>
     <p class="pending-notice">⏳ Seu recado será revisado pelo administrador antes de aparecer aqui.</p>
   </div>
@@ -357,8 +347,8 @@ select:-webkit-autofill:focus{
   <div class="music-suggest">
     <p class="ms-title">🎸 Qual música não pode faltar na festa da Berna?</p>
     <div class="ms-form">
-      <input type="text" id="songName" placeholder="Nome da música" maxlength="80">
-      <input type="text" id="songArtist" placeholder="Artista / Banda" maxlength="60">
+      <input type="text" id="songName" placeholder="Nome da música" maxlength="80" autocomplete="off" readonly onfocus="this.removeAttribute('readonly')" ontouchstart="this.removeAttribute('readonly')">
+      <input type="text" id="songArtist" placeholder="Artista / Banda" maxlength="60" autocomplete="off" readonly onfocus="this.removeAttribute('readonly')" ontouchstart="this.removeAttribute('readonly')">
       <button class="btn" style="white-space:nowrap;" onclick="submitSong()">Enviar 🎉</button>
     </div>
     <div class="songs-list" id="songsList"><p class="photo-empty">Carregando sugestões...</p></div>
@@ -432,7 +422,7 @@ function updateCompanions(){
   if(n===0){sec.classList.remove("show");inp.innerHTML="";return;}
   sec.classList.add("show");
   var html="";
-  for(var i=0;i<Math.min(n,6);i++){html+='<input class="comp-input" type="text" id="comp'+i+'" placeholder="Nome do acompanhante '+(i+1)+'" maxlength="60">';}
+  for(var i=0;i<Math.min(n,6);i++){html+='<input class="comp-input" type="text" id="comp'+i+'" placeholder="Nome do acompanhante '+(i+1)+'" maxlength="60" autocomplete="off" readonly onfocus="this.removeAttribute(\"readonly\")" ontouchstart="this.removeAttribute(\"readonly\")">';}
   inp.innerHTML=html;
 }
 
