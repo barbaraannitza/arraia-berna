@@ -58,8 +58,8 @@ select.rsvp-field option{background:#1a2f5a;color:var(--cream);}
 .comp-input{width:100%;background:rgba(255,255,255,.07);border:1.5px solid rgba(247,200,74,.18);border-radius:8px;color:var(--cream);font-family:"DM Sans",sans-serif;font-size:.88rem;padding:.5rem .85rem;outline:none;transition:.2s;margin-bottom:.4rem;}
 .comp-input:focus{border-color:var(--gold);}
 .comp-input::placeholder{color:rgba(255,248,231,.28);}
-.btn-rsvp{display:block;width:100%;font-family:"DM Sans",sans-serif;font-size:1.25rem;font-weight:500;color:#1a0800;background:var(--gold);border:none;border-radius:40px;padding:.7rem 1.8rem;cursor:pointer;box-shadow:0 4px 20px rgba(247,200,74,.35);transition:.2s;text-align:center;}
-.rsvp-card{background:rgba(255,255,255,.05);border:1.5px solid rgba(247,200,74,.2);border-radius:20px;padding:2rem;max-width:500px;margin:0 auto;text-align:center;}
+.btn-rsvp{display:block;width:100%;font-family:"DM Sans",sans-serif;font-size:1.25rem;font-weight:500;color:#1a0800;background:var(--gold);border:none;border-radius:40px;padding:.7rem 1.8rem;cursor:pointer;box-shadow:0 4px 20px rgba(247,200,74,.35);transition:.2s;}
+.rsvp-card{background:rgba(255,255,255,.05);border:1.5px solid rgba(247,200,74,.2);border-radius:20px;padding:2rem;max-width:500px;margin:0 auto;}
 .rsvp-field{text-align:left;}
 .btn-rsvp:hover{background:#ffe066;transform:translateY(-2px);box-shadow:0 6px 28px rgba(247,200,74,.5);}
 .btn-rsvp:active{transform:translateY(0);}
@@ -79,7 +79,7 @@ select.rsvp-field option{background:#1a2f5a;color:var(--cream);}
 .photo-delete{position:absolute;top:5px;right:5px;background:rgba(220,38,38,.85);border:none;border-radius:50%;width:26px;height:26px;cursor:pointer;color:#fff;font-size:.85rem;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .2s;}
 .photo-card:hover .photo-delete{opacity:1;}
 .photo-empty{color:rgba(255,248,231,.28);text-align:center;padding:2rem;font-size:.9rem;}
-.recado-form{background:rgba(255,255,255,.05);border:1.5px solid rgba(247,200,74,.16);border-radius:16px;padding:1.4rem;margin-bottom:1.5rem;text-align:center;}
+.recado-form{background:rgba(255,255,255,.05);border:1.5px solid rgba(247,200,74,.16);border-radius:16px;padding:1.4rem;margin-bottom:1.5rem;}
 .recado-form textarea,.recado-form input{text-align:left;}
 .recado-form textarea,.recado-form input{width:100%;background:rgba(255,255,255,.07);border:1.5px solid rgba(247,200,74,.2);border-radius:10px;color:var(--cream);font-family:"DM Sans",sans-serif;font-size:.95rem;padding:.65rem 1rem;outline:none;transition:.2s;margin-bottom:.65rem;resize:vertical;}
 .recado-form textarea::placeholder,.recado-form input::placeholder{color:rgba(255,248,231,.3);}
@@ -325,7 +325,7 @@ footer strong{color:var(--gold);}
   <div class="recado-form">
     <input type="text" id="recadoNome" placeholder="Seu nome" maxlength="60">
     <textarea id="recadoTexto" placeholder="Escreva seu recado aqui... 💛" maxlength="300"></textarea>
-    <button class="btn" onclick="submitRecado()">Enviar recado 💌</button>
+    <button class="btn" onclick="submitRecado()" style="width:100%;margin-top:.25rem;">Enviar recado 💌</button>
     <p class="pending-notice">⏳ Seu recado será revisado pelo administrador antes de aparecer aqui.</p>
   </div>
   <div class="recados-wall" id="recadosWall">
